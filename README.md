@@ -46,7 +46,7 @@ Este projeto Laravel oferece funcionalidades para gerenciar informações de ent
      DB_CONNECTION=mysql
      DB_HOST=127.0.0.1
      DB_PORT=3306
-     DB_DATABASE=sistema_entregas
+     DB_DATABASE=transportadora-app
      DB_USERNAME=root
      DB_PASSWORD=
      ```
