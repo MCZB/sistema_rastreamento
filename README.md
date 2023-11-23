@@ -30,35 +30,30 @@ Este projeto Laravel oferece funcionalidades para gerenciar informações de ent
    cd sistema-entregas
    ```
 
-2. **Instale o XAMPP:**
-   Baixe e instale o [XAMPP](https://www.apachefriends.org/index.html), que inclui o Apache, MySQL, PHP e phpMyAdmin.
+2. **Instale as Dependências:**
+   ```bash
+   composer install
+   ```
 
-3. **Inicie os Serviços do XAMPP:**
-   Inicie os serviços do Apache e MySQL através do painel de controle do XAMPP.
+3. **Crie o Arquivo de Configuração do Ambiente:**
+   ```bash
+   cp .env.example .env
+   ```
 
-4. **Configure o Ambiente Laravel:**
-   - Abra o arquivo `.env` no diretório do projeto.
-   - Configure as variáveis de ambiente para conexão com o banco de dados. Por exemplo:
-     ```env
-     DB_CONNECTION=mysql
-     DB_HOST=127.0.0.1
-     DB_PORT=3306
-     DB_DATABASE=transportadora-app
-     DB_USERNAME=root
-     DB_PASSWORD=
-     ```
+4. **Configure o Ambiente:**
+   Abra o arquivo `.env` e configure as variáveis de ambiente, como banco de dados e URLs da API.
 
 5. **Gere a Chave de Aplicação:**
    ```bash
    php artisan key:generate
    ```
 
-6. **Execute as Migrações do Banco de Dados:**
+7. **Execute as Migrações do Banco de Dados:**
    ```bash
    php artisan migrate
    ```
 
-7. **Inicie o Servidor Local:**
+8. **Inicie o Servidor Local:**
    ```bash
    php artisan serve
    ```
@@ -113,3 +108,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, propor m
 ## Licença
 
 Este projeto está sob a licença [MIT](LICENSE).
+```
