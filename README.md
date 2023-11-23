@@ -66,7 +66,7 @@ Este projeto Laravel oferece funcionalidades para gerenciar informações de ent
    php artisan serve
    ```
 
-Acesse [http://localhost:8000](http://localhost:8000) para visualizar a aplicação em execução.
+Acesse [http://localhost:8000/pesquisa](http://localhost:8000/pesquisa) para visualizar a aplicação em execução.
 
 ## Como Usar
 
