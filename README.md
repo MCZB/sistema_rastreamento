@@ -27,7 +27,7 @@ Este projeto Laravel oferece funcionalidades para gerenciar informações de ent
 1. **Clone o Repositório:**
    ```bash
    git clone https://github.com/MCZB/sistema-rastreamento.git
-   cd sistema-entregas
+   cd sistema-rastreamento
    ```
 
 2. **Instale as Dependências:**
