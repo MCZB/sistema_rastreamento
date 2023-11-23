@@ -41,7 +41,7 @@ Este projeto Laravel oferece funcionalidades para gerenciar informações de ent
    ```
 
 4. **Configure o Ambiente:**
-   Abra o arquivo `.env` e configure as variáveis de ambiente, como banco de dados e URLs da API.
+   Abra o arquivo `.env` e configure as variáveis de ambiente.
 
 5. **Gere a Chave de Aplicação:**
    ```bash
