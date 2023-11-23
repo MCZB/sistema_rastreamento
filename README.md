@@ -7,7 +7,6 @@ Este projeto Laravel oferece funcionalidades para gerenciar informações de ent
 
 ## Índice
 
-- [Status do Projeto](#status-do-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Instruções de Instalação](#instruções-de-instalação)
 - [Como Usar](#como-usar)
@@ -15,10 +14,6 @@ Este projeto Laravel oferece funcionalidades para gerenciar informações de ent
 - [Testes](#testes)
 - [Contribuição](#contribuição)
 - [Licença](#licença)
-
-## Status do Projeto
-
-**Em Desenvolvimento:** O projeto está em constante evolução, sendo aprimorado e expandido conforme necessário.
 
 ## Tecnologias Utilizadas
 
