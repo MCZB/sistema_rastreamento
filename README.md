@@ -88,7 +88,6 @@ A estrutura do projeto segue as convenções padrão do Laravel. Abaixo estão o
 - **.env:** Arquivo de configuração do ambiente.
 - **composer.json:** Configuração das dependências do Composer.
 - **phpunit.xml:** Configuração do PHPUnit.
-- **LICENSE:** Licença do projeto.
 - **README.md:** Documentação principal do projeto.
 
 ## Testes
@@ -104,8 +103,3 @@ Adapte e expanda os testes de acordo com as necessidades da sua aplicação.
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests.
-
-## Licença
-
-Este projeto está sob a licença [MIT](LICENSE).
-```
