@@ -41,22 +41,33 @@ Este projeto Laravel oferece funcionalidades para gerenciar informações de ent
    ```
 
 4. **Configure o Ambiente:**
-   Abra o arquivo `.env` e configure as variáveis de ambiente.
+   Abra o arquivo `.env` e configure as variáveis de ambiente, como o acesso ao banco de dados e as URLs das APIs.
 
+   Exemplo (configuração do banco de dados):
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=sistema_rastreamento
+   DB_USERNAME=seu_usuario
+   DB_PASSWORD=sua_senha
+   ```
+   
 5. **Gere a Chave de Aplicação:**
    ```bash
    php artisan key:generate
    ```
 
-7. **Execute as Migrações do Banco de Dados:**
+6. **Execute as Migrações do Banco de Dados:**
    ```bash
    php artisan migrate
    ```
 
-8. **Inicie o Servidor Local:**
+7. **Inicie o Servidor Local:**
    ```bash
    php artisan serve
    ```
+
 
 Acesse [http://localhost:8000/pesquisa](http://localhost:8000/pesquisa) para visualizar a aplicação em execução.
 
@@ -153,3 +164,5 @@ Adapte e expanda os testes de acordo com as necessidades da sua aplicação.
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests.
+
+
