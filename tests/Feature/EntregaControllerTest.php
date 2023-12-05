@@ -6,6 +6,18 @@ use Tests\TestCase;
 
 class EntregaControllerTest extends TestCase
 {
+    private $cpfValido;
+    private $idValida;
+
+    public function setUp(): void
+    {
+        parent::setUp();
+
+        // Configurar dados de teste
+        $this->cpfValido = '62817818059';
+        $this->idValida = 'f1e7be5c-90f3-4b0a-a5ff-3a44941a5412';
+    }
+
     /**
      * Testa a pesquisa por CPF com um CPF inválido.
      *
@@ -24,8 +36,8 @@ class EntregaControllerTest extends TestCase
      */
     public function testPesquisaPorCpfComCpfValido()
     {
-        // Substitua o CPF abaixo por um CPF válido
-        $response = $this->post('/pesquisar', ['cpf' => '62817818059']);
+        // Use $this->cpfValido aqui
+        $response = $this->post('/pesquisar', ['cpf' => $this->cpfValido]);
         $response->assertViewIs('entregas.index');
         // Adicione mais verificações conforme necessário
     }
@@ -37,7 +49,7 @@ class EntregaControllerTest extends TestCase
      */
     public function testMostrarDetalhesComIdInvalida()
     {
-        // Substitua a ID abaixo por uma ID que não exista no banco de dados ou na API
+        // Use uma ID dinâmica que seja improvável de existir
         $response = $this->get('/entregas/999');
         $response->assertViewIs('entregas.id_invalido');
         // Adicione mais verificações conforme necessário
@@ -50,10 +62,15 @@ class EntregaControllerTest extends TestCase
      */
     public function testMostrarDetalhesComIdValida()
     {
-        // Substitua a ID abaixo por uma ID existente no banco de dados ou na API
-        $response = $this->get('/entregas/f1e7be5c-90f3-4b0a-a5ff-3a44941a5412');
-
+        // Use $this->idValida aqui
+        $response = $this->get('/entregas/' . $this->idValida);
         $response->assertViewIs('entregas.detalhes');
         // Adicione mais verificações conforme necessário
+    }
+
+    public function tearDown(): void
+    {
+        // Limpar dados de teste, se necessário
+        parent::tearDown();
     }
 }
