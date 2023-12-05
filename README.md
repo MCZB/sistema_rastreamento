@@ -12,7 +12,6 @@ Este projeto Laravel oferece funcionalidades para gerenciar informações de ent
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Testes](#testes)
 - [Contribuição](#contribuição)
-- [Licença](#licença)
 
 ## Tecnologias Utilizadas
 
